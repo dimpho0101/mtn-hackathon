@@ -36,6 +36,7 @@
         <div class="row">
             <div class="input-field col s12 fault_type">
               <select>
+                <option value="" disabled selected>choose your option</option>
                 <option value="1">broken light pole</option>
                 <option value="2">Water meter box leaking</option>
                 <option value="3">No hot water</option>
@@ -48,6 +49,7 @@
           <div class="row">
             <div class="input-field col s12 customer type">
               <select>
+                <option value="" disabled selected>choose your option</option>
                 <option value="1">Residential</option>
                 <option value="2">Industrial</option>
                 <option value="3">Plot</option>
@@ -56,16 +58,25 @@
             </div>
           </div>
         
-         
-          <div class="row">
-           
+                    
               <div class="row">
                 <div class="input-field col s12 customer_notes">
                   <textarea id="textarea1" class="materialize-textarea"></textarea>
                   <label for="textarea1">Please share details of issue</label>
                 </div>
               </div>
-          </div>
+
+              <div class="row">
+                <div class="file-field input-field ">
+                  <div class="btn indigo lighten-3">
+                    <span>File</span>
+                    <input type="file" accept="image/*" capture="camera">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                  </div>
+                </div>
+              </div>
 
           <div class="row">
             <div class="input-field col s12">
@@ -77,7 +88,7 @@
           <div class="row">
             <div class="input-field col s12">
               <input id="AccNum" type="text" class="AccNum">
-              <label for="text">Alternative Account Number</label>
+              <label for="text">Account Number</label>
             </div>
           </div>
 
@@ -88,6 +99,23 @@
         </div>
         </form>
       </div>
+
+       <!-- footer -->
+     <footer class="page-footer indigo lighten-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2020 Copyright Dimpho Putu & Tshiamo Dilotsotle
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
 
       <script>
           //navbar js
